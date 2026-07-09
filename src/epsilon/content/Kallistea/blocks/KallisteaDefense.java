@@ -59,6 +59,7 @@ public class KallisteaDefense {
         }};
         dispersive = new EpsItemTurret("dispersive"){{
             requirements(Category.turret, with(KallisteaItems.calcite, 90, KallisteaItems.quartz, 50));
+            squareSprite = false;
             health = 210;
             size = 3;
             itemCapacity = 20;
@@ -66,14 +67,14 @@ public class KallisteaDefense {
             rotateSpeed = 2;
             reload = 155;
             range = 387;
-            outlineColor = Color.valueOf("38314a");
+            outlineColor = Color.valueOf("211c1c"); // Alt outline colors: "37272a", "241f1f".
             shootSound = EpsMusic.highShoot;
 
             drawer = new DrawTurret(){{
                 basePrefix = "disbase-";
                 parts.add(new RegionPart("-blade"){{
-                    x = 30f / 4f;
-                    y = 22f / 4f;
+                    //x = 30f / 4f;
+                    //y = 22f / 4f;
                     mirror = true;
                     under = true;
                     progress = PartProgress.warmup;
@@ -84,6 +85,7 @@ public class KallisteaDefense {
                 }});
             }};
 
+            shootY = -0.5f;
             shoot.firstShotDelay = 54;
             shoot.shots = 2;
             shoot.shotDelay = 10;
@@ -136,8 +138,8 @@ public class KallisteaDefense {
                                     colorTo = Color.valueOf("8b9cd3");
                                 }},
                                 new ParticleEffect(){{
-                                    offsetX = -80f / 4f;
-                                    offsetY = -30 / 4f;
+                                    offsetX = -28f / 4f;
+                                    offsetY = -15f / 4f;
                                     useRotation = true;
                                     baseRotation = -45f;
                                     lifetime = 70;
@@ -150,8 +152,8 @@ public class KallisteaDefense {
                                     colorTo = Color.valueOf("6b6b6b97");
                                 }},
                                 new ParticleEffect(){{
-                                    offsetX = -80f / 4f;
-                                    offsetY = 30f / 4f;
+                                    offsetX = -28f / 4f;
+                                    offsetY = 15f / 4f;
                                     useRotation = true;
                                     baseRotation = 45f;
                                     lifetime = 70;
