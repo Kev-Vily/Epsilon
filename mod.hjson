@@ -6,20 +6,22 @@ author:
 ItzJustaTeam
 
 [accent[]]Coders:[gray[]]
-• ItzCraft
-• AnDashik
-• Alnyle
-• Weersix
+• ItzCraft;
+• AnDašyk;
+• Alnyle;
+• Weersix;
 
 [accent[]]Sprites:[gray[]]
-• Nahan, ItzCraft
+• Nahan;
+• ItzCraft;
+• AnDaśyk;
 
 [accent[]]Music Composer:[gray[]]
-• Ace
+• Ace;
 
 [accent[]]Translators:[gray[]]
-• Kevin Vilyan
-• ItzCraft
+• Kevin Vilyan;
+• ItzCraft;
 '''
 main: "epsilon.EpsilonMod"
 description: "A mod which introduces actually unique [accent[]]Story Based Campaign[[]].\nMain goal of this mod is to show that lore based mods can be good too.\n\nWith story gameplay it introduces to you some new mechanics."
